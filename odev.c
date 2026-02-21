@@ -4,7 +4,7 @@ int main() {
     float batarya_sicakligi = 0.00;
     int sarj_yuzdesi = 0;
     char kapi_durumu = 'Z';
-    int fren_pedali = 1;
+    int fren_pedali = 0;
 
     printf("Batarya sıcaklığını giriniz: ");
     scanf("%f",&batarya_sicakligi);
@@ -24,7 +24,7 @@ int main() {
                 } else{
                     printf("fren_pedali durumu giriniz(1 basılı, 0 basılı değil): ");
                     scanf("%d",&fren_pedali);
-                    if(fren_pedali != 0 || fren_pedali != 1){
+                    if(fren_pedali != 0 && fren_pedali != 1){
                     printf("GEÇERSİZ GİRDİ. \n");
                     } else{
                         if(batarya_sicakligi >= 60.00){
@@ -36,7 +36,7 @@ int main() {
                         if(kapi_durumu == 'A'){
                         printf("HATA: Kapılar Açık! Lütfen Kapatınız. \n");
                         }
-                        if(fren_pedali == 0){
+                        if(fren_pedali = 0){
                         printf("BİLGİ: Güvenlik için frene basarak tekrar deneyin. \n");
                         }
                         if(batarya_sicakligi < 60.00 && sarj_yuzdesi >= 10 && kapi_durumu == 'K' && fren_pedali == 1){
