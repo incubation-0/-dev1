@@ -36,7 +36,7 @@ int main() {
                         if(kapi_durumu == 'A'){
                         printf("HATA: Kapılar Açık! Lütfen Kapatınız. \n");
                         }
-                        if(fren_pedali = 0){
+                        if(fren_pedali == 0){
                         printf("BİLGİ: Güvenlik için frene basarak tekrar deneyin. \n");
                         }
                         if(batarya_sicakligi < 60.00 && sarj_yuzdesi >= 10 && kapi_durumu == 'K' && fren_pedali == 1){
